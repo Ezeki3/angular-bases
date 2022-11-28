@@ -1,0 +1,6 @@
+<h3>Personajes</h3>
+<hr>
+<ul>
+  <!-- este pipe | sirve para indicar visualmente el dato en tipo numero          -->
+  <li *ngFor="let personaje of personajes;">{{personaje.nombre}} - {{personaje.poder | number}}</li>
+</ul>
