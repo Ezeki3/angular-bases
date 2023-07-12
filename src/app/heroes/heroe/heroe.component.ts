@@ -22,7 +22,11 @@ export class HeroeComponent {
   }
 
   cambiarEdad(): void {
-    this.edad = 30;
+    this.edad = 25;
   }
 
+  resetForm():void{
+    this.nombre ='Ironman';
+    this.edad = 45;
+  }
 }

@@ -15,8 +15,8 @@ export class ListadoComponent {
   //   console.log('ngOnInit');
   // }
 
-  heroes: string[] = ['Spiderman', 'Ironman', 'Thor', 'Hulk', 'Batman'];
-  heroeBorrado: string = '';
+  public heroes: string[] = ['Spiderman', 'Ironman', 'Thor', 'Hulk', 'Batman'];
+  public heroeBorrado: string = '';
 
   borrarHeroe(): void {
     // como en determinado momento devuelve undefined, con || le indicamos que devuelva un elemento vacio

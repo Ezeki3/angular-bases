@@ -10,12 +10,11 @@ import { ListadoComponent } from './listado/listado.component';
   ],
   exports: [
     ListadoComponent,
+    HeroeComponent,
   ],
   imports: [
     CommonModule
   ]
 })
 
-export class HeroesModule {
-
-}
+export class HeroesModule {}
