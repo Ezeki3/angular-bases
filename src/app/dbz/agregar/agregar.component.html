@@ -1,14 +1,14 @@
 <h3>Agregar: <small>{{nuevo.nombre}}</small></h3>
 <hr>
 
-<form (ngSubmit)="agregar( )">
+<form (ngSubmit)="agregar( )" class="row">
 
   <!-- los parentesis son para escuchar un evento o emitir un evento -->
   <!-- las llaves cuadradas son para establecer alguna propiedad al objeto -->
   <!-- SE AGREGAN LOS AVLORES AL INPUT Y SE OBTIENE LOS DATOS con JS [value]="nuevo.nombre" (input)="cambiarNombre($event)" -->
 
-  <input type="text" placeholder="Nombre" name="nombre" [(ngModel)]="nuevo.nombre">
-  <input type="number" placeholder="Poder" name="poder" [(ngModel)]="nuevo.poder">
-  <button type="submit">Agregar</button>
+  <input type="text" placeholder="Nombre" name="nombre" [(ngModel)]="nuevo.nombre" class="form-control mb-2">
+  <input type="number" placeholder="Poder" name="poder" [(ngModel)]="nuevo.poder" class="form-control mb-2">
+  <button type="submit" class="btn btn-primary">Agregar</button>
 
 </form>
