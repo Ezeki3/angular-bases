@@ -2,5 +2,20 @@
 <hr>
 <ul class="list-group">
   <!-- este pipe | sirve para indicar visualmente el dato en tipo numero          -->
-  <li *ngFor="let personaje of personajes;" class="list-group-item">{{personaje.nombre}} - {{personaje.poder | number}}</li>
+  <li *ngFor="let personaje of personajes;
+    let i = index;
+    let isFirst = first;
+    let isLast = last;
+    let isEven = even;
+    let isOdd = odd" 
+    class="list-group-item"
+    [ngClass]="{'list-group-item-warning': isOdd,
+     'list-group-item-primary': isEven
+    }">
+
+    <span class="text-primary">{{i + 1}}.</span>
+    <span>
+      {{personaje.nombre}} - {{personaje.poder | number}}
+    </span>
+  </li>
 </ul>
