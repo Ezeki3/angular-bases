@@ -16,9 +16,9 @@ export class AgregarComponent {
     poder: 0
   }
 
-  constructor(private dbzService: DbzService) {
-
-  }
+  constructor(
+    private dbzService: DbzService
+  ) {}
 
   // con Output mandamos informacion del hijo al padre
   // este onNuevoPersonaje emite Personaje
