@@ -19,4 +19,10 @@ export class PersonajesComponent {
   constructor(private dbzService: DbzService) {
 
   }
+
+  onDeleteCharacter(index:number):void{
+    // TODO: Emitir el id del personaje
+    console.log(index);
+    
+  }
 }
