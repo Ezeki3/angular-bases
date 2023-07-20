@@ -42,4 +42,9 @@ export class AgregarComponent {
     }
 
   }
+
+  onDelete(index:number){
+    console.log('Eliminar:', index );
+  }
+  
 }

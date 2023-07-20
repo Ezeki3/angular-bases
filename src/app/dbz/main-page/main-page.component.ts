@@ -20,10 +20,10 @@ export class MainPageComponent implements OnInit {
     poder: 100
   }
 
+  constructor() {}
 
-
-
-  constructor() {
-
+  onDeleteCharacter(personaje:Personaje){
+    const remove = this.nuevo
+    // remove.splice(personaje)
   }
 }
