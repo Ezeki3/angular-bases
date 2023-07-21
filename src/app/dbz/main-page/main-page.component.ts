@@ -22,8 +22,7 @@ export class MainPageComponent implements OnInit {
 
   constructor() {}
 
-  onDeleteCharacter(personaje:Personaje){
-    const remove = this.nuevo
-    // remove.splice(personaje)
+  onDeleteCharacter(nuevo:any){
+    // this.nuevo.splice(nuevo)
   }
 }
