@@ -24,4 +24,10 @@ export class DbzService {
   agregarPersonaje(personaje: Personaje) {
     this._personajes.push(personaje);
   }
+
+  onDelete(index:number){
+    this._personajes.splice(index,1);
+    console.log(index)
+  }
+  
 }

@@ -22,7 +22,7 @@ export class PersonajesComponent {
 
   onDeleteCharacter(index:number):void{
     // TODO: Emitir el id del personaje
-    console.log(index);
+    this.dbzService.onDelete(index)
     
   }
 }
