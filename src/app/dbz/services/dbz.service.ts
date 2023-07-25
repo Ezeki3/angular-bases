@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Personaje } from "../interfaces/dbz.interface";
+import { v4 as uuid} from 'uuid'
 
 @Injectable()
 export class DbzService {
