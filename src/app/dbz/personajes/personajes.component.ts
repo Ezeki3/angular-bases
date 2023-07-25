@@ -20,9 +20,9 @@ export class PersonajesComponent {
 
   }
 
-  onDeleteCharacter(index:number):void{
+  onDeleteCharacter(id:number):void{
     // TODO: Emitir el id del personaje
-    this.dbzService.onDelete(index)
+    this.dbzService.deletePersonajeById(id)
     
   }
 }
