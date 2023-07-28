@@ -7,7 +7,7 @@ export class DbzService {
 
   private _personajes: Personaje[] = [
     {
-      id: uuid(),
+      // id: uuid(),
       nombre: 'Goku',
       poder: 15000
     },
@@ -35,14 +35,15 @@ export class DbzService {
     this._personajes.push(personaje);
   }
 
-  // onDelete(index:number){
-  //   this._personajes.splice(index,1);
-  //   console.log(index)
-  // }
-  deletePersonajeById(id:string){
-    console.log(id)
-    this._personajes = this._personajes.filter(personaje => personaje.id !== id)
+  onDelete(index:number){
+    this._personajes.splice(index,1);
+    console.log(index)
   }
+  
+  // deletePersonajeById(id:string){
+  //   console.log(id)
+  //   this._personajes = this._personajes.filter(personaje => personaje.id !== id)
+  // }
   
   
 }

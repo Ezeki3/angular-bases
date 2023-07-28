@@ -23,6 +23,7 @@ export class PersonajesComponent {
   onDeleteCharacter(id:number):void{
     // TODO: Emitir el id del personaje
     // this.dbzService.deletePersonajeById(id)
+    this.dbzService.onDelete(id)
     
   }
 }
